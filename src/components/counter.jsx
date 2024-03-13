@@ -15,13 +15,22 @@ const Counter = () => {
       setCount(count - 1);
     }
   };
+  const reset = () => {
+    setCount(1);
+  };
 
   async function fetchName() {
     let data = await fetch(
-      "https://jsonplaceholder.typicode.com/users/" + count 
+      "https://jsonplaceholder.typicode.com/users/" + count
     );
     let json = await data.json();
     setUser(json);
+  }
+
+  async function handleClick(e) {
+    e.target.style.backgroundColor = "red";
+    e.target.style.color = "white";
+    e.target.style.innerText = "clicked!";
   }
 
   useEffect(() => {
@@ -35,8 +44,14 @@ const Counter = () => {
           <button onClick={decrement} className="btn">
             -
           </button>
+          <button onClick={reset} className="btn">
+            Reset
+          </button>
           <button onClick={increment} className="btn">
             +
+          </button>
+          <button onClick={(e) => handleClick(e)} className="btn">
+            Click me
           </button>
         </div>
       </div>
