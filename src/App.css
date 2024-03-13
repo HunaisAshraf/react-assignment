@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cards, .counter {
+  display: grid;
+  place-items: center;
+  box-shadow: 1px 1px 1px 1px rgb(167, 167, 167);
+  background-color: rgb(4, 79, 79);
+  color: white;
+  margin: 20px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.count{
+    text-align: center;
+}
+
+.btn{
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
