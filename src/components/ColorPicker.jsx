@@ -12,12 +12,19 @@ const ColorPicker = () => {
   };
 
   const changeColor = (e) => {
-    setColor(e.target.value)
+    // eslint-disable-next-line no-unused-vars
+    setColor(c => c = e.target.value);
   };
 
   return (
     <div style={styles}>
-      <input type="color" style={{border:"none"}} onChange={changeColor} />
+      {styles.backgroundColor === "#000000" ? (
+        <p style={{ color: "#FFFFFF" }}>{color}</p>
+      ) : (
+        <p>{color}</p>
+      )}
+
+      <input type="color" style={{ border: "none" }} onChange={changeColor} />
     </div>
   );
 };
