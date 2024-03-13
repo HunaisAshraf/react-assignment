@@ -1,20 +1,22 @@
 import "./App.css";
-import Update from "./components/Update";
+import Update from "./components/UpdateObj";
 import Counter from "./components/counter.jsx";
-// import Card from "./components/Card";
-// import { user } from "../data";
+import Card from "./components/Card";
+import { user } from "../data";
 import Form from "./components/Form"
 import ColorPicker from "./components/ColorPicker"
+import UpdateArray from "./components/UpdateArray.jsx";
 
 function App() {
  
   return (
     <>
       {/* <Card data={user} /> */}
-      <Counter />
+      {/* <Counter />
       <Form />
       <Update />
-      <ColorPicker />
+      <ColorPicker /> */}
+      <UpdateArray />
     </>
   );
 }
