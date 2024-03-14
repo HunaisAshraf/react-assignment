@@ -6,7 +6,8 @@ import "./App.css";
 // import Form from "./components/Form";
 // import ColorPicker from "./components/ColorPicker";
 // import UpdateArray from "./components/UpdateArray.jsx";
-import AddObj from "./components/AddObjToArr.jsx";
+// import AddObj from "./components/AddObjToArr.jsx";
+import Effect from "./components/Effect.jsx";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       <Update />
       <ColorPicker /> */}
       {/* <UpdateArray /> */}
-      <AddObj />
+      {/* <AddObj /> */}
+      <Effect />
     </>
   );
 }
