@@ -13,7 +13,7 @@ const ColorPicker = () => {
 
   const changeColor = (e) => {
     // eslint-disable-next-line no-unused-vars
-    setColor(c => c = e.target.value);
+    setColor((c) => (c = e.target.value));
   };
 
   return (
