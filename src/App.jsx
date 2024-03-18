@@ -18,6 +18,7 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import Error404 from "./components/Error404.jsx";
+import User from "./components/User.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -26,6 +27,9 @@ const router = createBrowserRouter(
       <Route path="color-picker" element={<ColorPicker />} />
       <Route path="effect" element={<Effect />} />
       <Route path="*" element={<Error404 />} />
+      <Route path="user" element={<User />}>
+        <Route path=":userId" element={<User />} />
+      </Route>
     </Route>
   )
 );

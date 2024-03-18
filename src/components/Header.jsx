@@ -35,6 +35,9 @@ const Header = () => {
         >
           screen
         </NavLink>
+        <NavLink to="/user"
+          className={({ isActive }) => `${isActive ? "text-orange-600" : ""}`}
+        >user</NavLink>
       </nav>
     </div>
   );
